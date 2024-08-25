@@ -1,0 +1,157 @@
+/* Estilos gerais da página */
+body {
+  font-family: sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #fff; /* Cor de fundo do header */
+  padding: 1rem 0; /* Espaçamento interno */
+  position: relative; /* Para posicionar o título em relação ao header */
+  z-index: 10; /* Garante que o header fique acima do carrossel */
+}
+
+.header .hero-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Seção Hero */
+.hero {
+  background-color: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.hero .hero-text {
+  font-size: 1.8rem;
+}
+
+.hero .btn-success {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+}
+
+/* Seção 2 */
+.section-2 {
+  padding: 3rem 0;
+}
+
+.section-2 .btn-success {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+}
+
+/* Seção 4 - Depoimentos */
+.testimonial {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.style-one {
+  width: 80%;
+  height: 5px;
+  background-color: #4caf50;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+}
+
+.style-two {
+  width: 80%;
+  height: 5px;
+  background-color: #3498db;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+}
+
+.style-three {
+  width: 80%;
+  height: 5px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 3rem 0;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-btn i {
+  font-size: 20px;
+}
+
+.whatsapp-popup {
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.whatsapp-popup::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  border-style: solid;
+  border-width: 10px 10px 0 0;
+  border-color: #25d366 transparent transparent transparent;
+}
+
+.whatsapp-btn:hover + .whatsapp-popup {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilos adicionais para os carousels */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  height: calc(100vh - 70px);
+}
+
+/* Outros estilos */
+.bg-light {
+  background-color: #f8f8f8 !important;
+}
