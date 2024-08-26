@@ -1,5 +1,4 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 import Menu from './Menu';
 
 const Header = () => {

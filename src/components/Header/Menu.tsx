@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button, Typography, Link } from '@mui/material';
+import { Button, Link } from '@mui/material';
 
 const Menu = () => {
   return (
