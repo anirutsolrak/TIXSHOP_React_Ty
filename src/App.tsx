@@ -47,18 +47,30 @@ const App = () => {
         title="Decore sua casa com estilo e qualidade: móveis incríveis te esperam!"
         buttonText="Encontre seu móvel ideal"
         images={[
-          'public/carousel1.1.jpg',
-          'public/carousel1.2.jpg',
-          'public/carousel1.3.jpg',
+          '/carousel1.1.jpg',
+          '/carousel1.2.jpg',
+          '/carousel1.3.jpg',
+          '/carousel1.4.jpg',
+'/carousel1.5.jpg',
+'/carousel1.6.jpg',
+'/carousel1.7.jpg',
+'/carousel1.8.jpg',
+'/carousel1.9.jpg',
         ]}
       />
       <Hero
         title='"Móveis com design, durabilidade e preços justos: essa é a missão da TIXSHOP"'
         buttonText="Fale conosco"
         images={[
-          'public/carousel2.1.jpg',
-          'public/carousel2.2.jpg',
-          'public/carousel2.3.jpg',
+          '/carousel2.1.jpg',
+          '/carousel2.2.jpg',
+          '/carousel2.3.jpg',
+          '/carousel2.4.jpg',
+          '/carousel2.5.jpg',
+          '/carousel2.6.jpg',
+          '/carousel2.7.jpg',
+          '/carousel2.8.jpg',
+          '/carousel2.9.jpg',
         ]}
       />
       <Box id="section-3" className="section-3" sx={{ py: 8 }}>
@@ -73,7 +85,7 @@ const App = () => {
                   <CardMedia
                     component="img"
                     height="200"
-                    image={`public/carousel1.${cardNumber}.jpg`}
+                    image={`/carousel1.${cardNumber}.jpg`}
                     alt={`Descrição da imagem ${cardNumber}`}
                   />
                   <CardContent>
