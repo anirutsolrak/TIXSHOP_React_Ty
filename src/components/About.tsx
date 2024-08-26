@@ -1,8 +1,9 @@
+import React, { forwardRef } from 'react';
 import { Box, Container, Typography } from '@mui/material';
 
-const About = () => {
+const About = forwardRef<HTMLDivElement, {}>(({ }, ref) => {
   return (
-    <Box sx={{ py: 8, bgcolor: '#f8f8f8' }}> 
+    <Box sx={{ py: 8, bgcolor: '#f8f8f8' }} ref={ref}>
       <Container maxWidth="lg">
         <Typography variant="h4" component="h2" align="center" gutterBottom>
           Sobre Nós
@@ -22,6 +23,6 @@ const About = () => {
       </Container>
     </Box>
   );
-};
+});
 
 export default About;

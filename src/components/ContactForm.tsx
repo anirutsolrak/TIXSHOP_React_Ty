@@ -1,8 +1,9 @@
+import React, { forwardRef } from 'react';
 import { Box, Container, Typography } from '@mui/material';
 
-const ContactForm = () => {
+const ContactForm = forwardRef<HTMLDivElement, {}>(({ }, ref) => {
   return (
-    <Box sx={{ py: 8 }}>
+    <Box sx={{ py: 8 }} ref={ref}>
       <Container maxWidth="lg">
         <Typography variant="h4" component="h2" align="center" gutterBottom>
           Entre em Contato
@@ -26,6 +27,6 @@ const ContactForm = () => {
       </Container>
     </Box>
   );
-};
+});
 
 export default ContactForm;

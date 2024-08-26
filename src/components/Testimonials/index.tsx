@@ -14,11 +14,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ testimonials }) => {
         <Typography variant="h4" component="h2" align="center" gutterBottom>
           Clientes Satisfeitos
         </Typography>
-        <Grid
-          container
-          spacing={4}
-          sx={{ display: 'flex', justifyContent: 'center' }}
-        >
+        <Grid container spacing={4} sx={{ display: 'flex', justifyContent: 'center', flexWrap: { xs: 'wrap', md: 'nowrap' } }}> {/* Responsivo para wrap */}
           {testimonials.map((testimonial) => (
             <Grid item xs={12} sm={6} md={4} key={testimonial.author}>
               <Testimonial {...testimonial} />

@@ -26,10 +26,10 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, author, style }) => {
     <Card
       sx={{
         borderRadius: 2,
-        boxShadow: 3, //boxShadow: '0px 4px 8px rgba(0,0,0,0.1)',
+        boxShadow: 3, 
         position: 'relative', 
-        p: 2, // Padding para o Card
-        '&:before': { // Adiciona pseudo-elemento para a linha
+        p: 2, 
+        '&:before': { 
           content: '""',
           ...lineStyles,
         },
