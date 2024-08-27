@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 import { Box, Container, Typography } from '@mui/material';
 
 const About = forwardRef<HTMLDivElement, {}>(({ }, ref) => {
