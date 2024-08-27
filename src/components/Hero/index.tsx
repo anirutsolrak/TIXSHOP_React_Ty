@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import { Box, Container, Grid, Typography, Button } from '@mui/material';
 import Carousel from './Carousel';
 
